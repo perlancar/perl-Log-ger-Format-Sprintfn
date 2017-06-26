@@ -48,7 +48,6 @@ sub get_hooks {
                             push @args, $_[$i];
                         }
                     }
-                    use DD; dd [$fmt, @args];
                     sprintfn $fmt, @args;
                 };
                 [$formatter];
