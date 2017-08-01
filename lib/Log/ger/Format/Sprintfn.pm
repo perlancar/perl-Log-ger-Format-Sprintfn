@@ -70,11 +70,7 @@ After that:
  log_debug 'user is %(username)s, details are %(detail)s',
      {username=>"Foo", detail=>{...}};
 
-To install only for current package:
-
- use Log::ger::Format;
- Log::ger::Format->set_for_current_package('Sprintfn');
- use Log::ger;
+Note that this only has effect in the importing package.
 
 
 =head1 DESCRIPTION
